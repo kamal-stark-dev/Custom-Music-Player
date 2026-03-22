@@ -55,6 +55,15 @@ body {
   margin: 0 4px;
 }
 
+.progress-bar {
+  display: flex;
+}
+
+#song-progress {
+  flex: 1;
+  margin-right: 8px;
+}
+
 #song-title {
   font-size: 18px;
   overflow: hidden;

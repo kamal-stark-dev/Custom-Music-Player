@@ -15,6 +15,8 @@ const nextSongEl = document.getElementById("nextSong");
 
 const trackImageEl = document.getElementById("track-image");
 
+const songProgress = document.getElementById("song-progress");
+
 // handling keydown events
 document.querySelector("body").addEventListener("keydown", (event) => {
   if (event.key === " ") {
@@ -76,6 +78,7 @@ song.addEventListener("loadedmetadata", () => {
 });
 
 song.addEventListener("timeupdate", () => {
+  songProgress.value = (song.currentTime / song.duration) * 100;
   currentTimeEl.innerText = formatTime(song.currentTime);
 });
 
