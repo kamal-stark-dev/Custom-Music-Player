@@ -1,0 +1,83 @@
+* {
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://wallpaperaccess.com/full/15691710.jpg);
+  background-size: cover;
+  color: white;
+}
+
+/* music player */
+.music-container {
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  margin: 12px;
+  border: 2px solid white;
+  border-style: dashed;
+}
+
+.music-container .track-image {
+  width: 400px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.music-player {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 16px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  padding: 12px;
+  border: 2px solid white;
+  border-style: dashed;
+}
+
+.song-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin: 0 4px;
+}
+
+#song-title {
+  font-size: 18px;
+  overflow: hidden;
+  font-weight: bold;
+  letter-spacing: 1px;
+  max-width: 130px;
+  overflow-x: scroll;
+  text-wrap: nowrap;
+}
+
+.song-info ::-webkit-scrollbar {
+  display: none;
+}
+
+.music-player i {
+  font-size: 24px;
+  transition: 0.2s;
+}
+
+.music-player i:hover {
+  transform: scale(1.2);
+}
+
+#playPause {
+  font-size: 32px;
+}
